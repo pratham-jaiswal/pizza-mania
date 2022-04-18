@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=Ubuntu&display=swap');
+
+body{
+    background-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    display: none; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.container{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.banner{
+    display: flex;
+    height: 96vh;
+    width: 95vw;
+    margin: 2vh auto;
+}
+
+.bg-img{
+    background-image: url("Assets/bg.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 100%;
+    flex: 1;
+    height: 100%;
+}
+
+.nav-container{
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    color: black;
+    width: 20%;
+}
+
+.home-ul{
+    width: 25vw;
+    position: absolute;
+    right: 5vw;
+    justify-content: space-around;
+}
+
+li{
+    cursor: pointer;
+}
+
+.home-ul li a, .right-ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+#active{
+    border-bottom: 1px solid #000
+}
+
+.right-ul li a:hover, #active:hover, .home-ul li a:hover, #active:hover{
+    transform: translate3d(0, -2px, 0);
+    color: white;
+}
+
+.slogan{
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+    background: rgb(255, 125, 147);
+}
+
+.motto{
+    display: grid;
+    width: 100%;
+    height: 80vh;
+    margin: auto auto;
+}
+
+.motto h1{
+    text-align: left;
+    width: 70%;
+    font-size: 3rem;
+    margin: auto auto 2vh;
+    color: black;
+}
+
+.motto p{
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.brand img{
+    width: 38px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center; /*all .brand items in center*/
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-container{
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+
+.other-ul{
+    display: flex;
+    list-style-type: none;
+    height:7vh;
+    width: 98vw;
+    margin: 2vh 1vw;
+    background: rgb(255, 125, 147);
+    color: white;
+}
+
+.icon{
+    flex: 1;
+}
+
+.other-ul li{
+    margin: 0 18px;
+}
+
+.right-ul{
+    position: absolute;
+    right: 1vw;
+    justify-content: space-around;
+    flex: 1;
+    height: 100%;
+    width: auto;
+    overflow: auto;
+}
+
+.food-items{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    justify-content: center;
+}
+
+.food{
+    display: grid;
+    grid-template-columns: 40% 5% 20%;
+    justify-content: space-around;
+}
+
+.food-items img{
+    padding: 10px 10px;
+    max-width: 300px;
+}
+
+.food-details{
+    display: grid;
+    align-content: center;
+}
+
+.food-details ul{
+    list-style-type: none;
+}
+
+.food-input{
+    display: grid;
+    align-content: center;
+    max-width: 30px;
+}
+
+.food-quantity{
+    margin-top: 10px;
+}
+
+.cart-details{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    justify-content: center;
+}
+
+.cart-items{
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    justify-content: space-around;
+}
+
+.cart-items ul{
+    list-style-type: none;
+}
+
+.cart-details .checkout{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.cart-details button, .payment-page button, .to-cart button, .login-btn button, .register-btn button{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background: blue;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cart-details button:hover, .payment-page button:hover, .to-cart button:hover, .login-btn button:hover, .register-btn button:hover{
+    background: rgb(2, 2, 170);
+    transform: translate3d(0, -2px, 0);
+    cursor: pointer;
+}
+
+.payment-page{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.payment-details{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.pay-details, .login-details, .register-details{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 100px;
+}
+
+.pay-details label, .pay-details input, .login-details label, .login-details input, .register-details input, .register-details label{
+    margin: 5px 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.pay-details input, .login-page input, .register-page input{
+    padding: 5px 10px ;
+    border: 1px solid grey;
+}
+
+.login-page{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.login-input{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.register-page{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.register-input{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.payment-page .pay, .food-items .to-cart{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.login-page .login-btn, .register-page .register-btn{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.account-page{
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    right: 0;
+    z-index: 5;
+}
+
+.account-info{
+    justify-content: left;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.account-info th, .account-info td{
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.sales-page{
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.sales-table table{
+    display: grid;
+    grid-template-columns: 9;
+    justify-content: center;
+}
+
+.sales-table a:hover{
+    color: grey;
+    text-decoration: none;
+}
+
+.card{
+    background: white;
+    padding: 60px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #C8D0D8;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.card h1{
+    color:  rgb(255, 125, 147);
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.card p{
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size:20px;
+    margin: 0;
+}
+.card i{
+    color:  rgb(255, 125, 147);
+    font-size: 100px;
+    line-height: 200px;
+    margin-left:-15px;
+}
