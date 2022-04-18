@@ -1,4 +1,4 @@
-Steps to use the cod:
+Steps to use the code:
 1. Download & Install: XAMPP in C:\xampp (default)
 2. Clone this repository in C:\xampp\htdocs
 3. Run XAMPP and start "Apache" and "MySQL"
