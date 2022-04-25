@@ -46,7 +46,7 @@ if(!(isset($_SESSION['admin']))){
                 
                 <section class="motto">
                     <h1>Welcome</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nunc nisi, molestie id quam feugiat, cursus fermentum erat. Donec vitae velit nec sapien viverra convallis. Pellentesque ut dapibus massa. Nam elit sapien, fermentum sit amet diam dapibus, dictum cursus tortor. Morbi sed ligula id urna viverra ultricies. Sed velit eros, eleifend quis elit non, fringilla fermentum eros. Quisque vitae quam vehicula, tempus nulla et, luctus ipsum. Mauris aliquam nisi ac leo hendrerit rhoncus.</p>
+                    <p>People disappoint, but Our Pizza never does.<br><br> Contact: admin@pizzamania.in</p>
                 </section>
             </div>
         </section>
