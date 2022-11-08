@@ -1,14 +1,16 @@
-Steps to use the code:
-1. Download & Install: XAMPP in C:\xampp (default)
-2. Clone this repository in C:\xampp\htdocs
-3. Run XAMPP and start "Apache" and "MySQL"
-4. Open the link "localhost/phpmyadmin/"
-5. Click on new at sidebar and create a database name "pizzamania"
-6. After clicking database click import and select the file "pizzamania.sql"
-4. Open the link "localhost/pizza-mania/"
+# Pizza Mania
+
+### _Steps_
+1. Download & Install: XAMPP in ```C:\xampp``` (default)
+2. Clone this repository in ```C:\xampp\htdocs```
+3. Run XAMPP and start ```Apache``` and ```MySQL```
+4. Open the link [localhost/phpmyadmin/]
+5. Click on new at sidebar and create a database name ```pizzamania```
+6. After clicking database click ```import``` and select the file ```pizzamania.sql```
+4. Open the link [localhost/pizza-mania/]
 8. Now register and login!!
 
-Admin Credentials: admin, admin@123
+Admin Credentials: ```admin```, ```admin@123```
 
 Assets: Images used in web
 
@@ -39,3 +41,7 @@ store.php: To select pizzas from, and add them to cart.
 style.css: The whole stylesheet of this project.
 
 success.php: Payment successful page.
+[//]: #
+
+   [localhost/phpmyadmin/]: <localhost/phpmyadmin/>
+   [localhost/pizza-mania/]: <localhost/pizza-mania/>
